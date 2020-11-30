@@ -74,7 +74,7 @@ Ik zou graag willen bespreken hoe je een hamburger menu maakt.
 ## Breakdownschets (week 1)
 
 Breakdown schets van de homepagina
-<img src="images/readme/Breakdown schets.png" alt="breakdownschts"></img>
+<img src="images/readme/Breakdown schets.png" alt="breakdownschts" width= 200px height=100%></img>
 
 
 
