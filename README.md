@@ -38,14 +38,25 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
-- Klaar met html Homepagina, en productpagina. - Begonnen met de css van de homepagina
+Homepagina
+- Klaar met html
+</br>
+- Begonnen met de css van de homepagina
+</br>
 - Het is me gelukt om de buttons in de images goed te stylen. 
+</br>
+
+Productpagina
+- Begonnen met html
 
 
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+<img src="images/readme/buttons.png" alt="buttons tot nu toe">
+Hier is het me gelukt met position: relative, om de buttons gestyled in de foto te plaatsen
+
+<img src="images/readme/footer ongestyled.png" alt="footer tot nu toe">
 
 ### Agenda voor meeting
 
@@ -53,14 +64,6 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 Ik zou graag willen bespreken hoe je een hamburger menu maakt. 
 
-| student 1      
-| student 2          
-| student 3    
-| student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
 
 ### Verslag van meeting
 
@@ -70,12 +73,12 @@ Ik zou graag willen bespreken hoe je een hamburger menu maakt.
 
 ## Breakdownschets (week 1)
 
-<img src="images/Breakdown schets.png" alt="breakdownschts"></img>
+Breakdown schets van de homepagina
+<img src="images/readme/Breakdown schets.png" alt="breakdownschts"></img>
 
 
 
 ## Intake (week 1)
--uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
 **Je startniveau:** rood / (heel klein beetje zwart door gevolgde vakken en themasemester)
 
@@ -86,9 +89,9 @@ Ik zou graag willen bespreken hoe je een hamburger menu maakt.
 **Screenshot(s) van de eerste pagina (small screen):**
 
 -homepagina-
-<img src="images/homeVB.PNG" width="375px" alt="omschrijving van de pagina">
+<img src="images/readme/homeVB.PNG" width="375px" alt="omschrijving van de pagina">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
 -productpagina-
-<img src="images/productVB.PNG" width="375px" alt="omschrijving van de pagina">
+<img src="images/readme/productVB.PNG" width="375px" alt="omschrijving van de pagina">
