@@ -1,5 +1,96 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+header {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+}
+
+nav li {
+  list-style-type: none;
+  padding: 10px;
+
+}
+
+#sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: white;
+  left: -200px;
+  transition: all 500ms linear;
+
+}
+
+#sidebar.active {
+  left: 0px;
+}
+
+#sidebar .toggle-btn {
+  position: relative;
+  left: 230px;
+  top: 20px;
+}
+
+#sidebar .toggle-btn span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  margin: 3px 0px;
+z-index: 1;
+}
+
+
+
+header img:nth-child(1) {
+  margin: 50px
+
+}
+
+
+main article {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 10px;
+}
+
+main article img {
+  min-width: 350px;
+  max-width: 360px;
+  min-height: auto;
+  max-height: 500px;
+
+}
+
+main article button {
+  border: solid 1px black;
+  padding: 5px 15px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background: transparent;
+
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  
+
+
+}

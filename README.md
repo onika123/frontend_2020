@@ -1,5 +1,4 @@
-# frontend_2020 - Procesverslag
-
+# Procesverslag
 **Auteur:** Onika Schroder
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
@@ -39,7 +38,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+- Klaar met html Homepagina, en productpagina. - Begonnen met de css van de homepagina
+- Het is me gelukt om de buttons in de images goed te stylen. 
+
+
 
 **Screenshot(s):**
 
@@ -49,7 +51,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -samen met je groepje opstellen-
 
-| student 1      | student 2          | student 3    | student 4        |
+Ik zou graag willen bespreken hoe je een hamburger menu maakt. 
+
+| student 1      
+| student 2          
+| student 3    
+| student 4        |
 | ---            | ---                | ---          | ---              |
 | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
 | an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
@@ -63,7 +70,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Breakdownschets (week 1)
 
--uitwerken voor de 1e werkgroep - eind van de eerste week-
+<img src="images/Breakdown schets.png" alt="breakdownschts"></img>
 
 
 
