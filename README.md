@@ -30,9 +30,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
+Ik ben goed opweg met de styling van header & footer, die op beide pagina's hetzelfde zijn. De transitie van het menu is af. Er moet wel nog content aan worden toegevoegd en hoe de huidige pagina eruit ziet als het menu opengeklapt is. 
 
+**Screenshot(s):**
 
+### Agenda voor meeting
+
+### Verslag van meeting
 
 ## Voortgang 1 (week 3)
 
@@ -67,7 +72,18 @@ Ik zou graag willen bespreken hoe je een hamburger menu maakt.
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+-H3 uit UL
+-object-fit: contain op alle images in header
+<img src="images/voortgang/tip" width=200px alt="tip1"> </img>
+-ul andersom
+-goeie html tot nu toe, ee
+-sanne, heeft  hamburgermenu toelichting gegeven
+-search.png: er een button van maken met als background die zoek image
+-button in image, moet een link zijn en geen button, dus <a>
+-border toevoegen bij het maken. 
+<img src="images/voortgang/tip2" width=200px alt="tip2"> </img>
+- hamburger menu zijn ook linkjes en geen <p>
+
 
 
 

@@ -1,5 +1,5 @@
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
 
 *,
 *::after,
@@ -17,6 +17,13 @@ header {
   margin-bottom: 20px;
 }
 
+header img:first-of-type {
+  width: 7em;
+  height: 2em;
+  flex-grow: 1;
+  align-self: center;
+}
+
 nav {
   display: flex;
 }
@@ -27,43 +34,57 @@ nav li {
 
 }
 
-#sidebar {
-  position: fixed;
-  width: 200px;
-  height: 100%;
-  background: white;
-  left: -200px;
-  transition: all 500ms linear;
 
-}
-
-#sidebar.active {
-  left: 0px;
-}
-
-#sidebar .toggle-btn {
+header nav button {
   position: relative;
-  left: 230px;
-  top: 20px;
-}
-
-#sidebar .toggle-btn span {
-  display: block;
-  width: 25px;
-  height: 2px;
-  background-color: black;
-  margin: 3px 0px;
-z-index: 1;
-}
-
-
-
-header img:nth-child(1) {
-  margin: 50px
+  /* width: 2em; */
+  /* height: 2.5em; */
+  font-size: 2em;
+  border: none;
+  /* border-radius: .25em; */
+  /* appearance:none; */
+  cursor: pointer;
+  background-color: white;
+  z-index: 100;
 
 }
 
+header nav button::before {
+  content: "\2630 ";
+  display: inline-block;
+  width: 1em;
+  transform: scale(.75);
 
+}
+
+nav.toonMenu button::before {
+  content: "\2630";
+}
+
+header nav ul {
+  margin: 0;
+  padding: 4em 0 0;
+  background: white;
+  list-style: none;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: translatex(-100%);
+  transition: .3s;
+  z-index: 50;
+}
+
+nav.toonMenu ul {
+  transform: translatex(0);
+
+}
+
+
+
+/* main */
 main article {
   position: relative;
   display: flex;
@@ -90,7 +111,110 @@ main article button {
   position: absolute;
   z-index: 1;
   top: 15px;
+
+
+
+}
+
+
+
+/* footer styling */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer section {
+  padding: 10px;
+  border: 1px solid black;
+
+}
+
+/* support & account flexboxen naast elkaar */
+footer section:nth-of-type(2) {
+  flex: 0 50%;
+}
+
+footer section:nth-of-type(3) {
+  flex: 0 50%;
+}
+
+/* lijnt de list-items gelijk met h3 */
+footer section ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* styling van de lists */
+footer section ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+  line-height: 2em;
+ 
+}
+
+footer h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* styling van de input */
+
+footer input {
+  font-family: 'Open Sans Condensed', sans-serif;
+  width: 70%;
+  font-size: 1em;
+  padding: .5em 1em;
+}
+
+footer article:first-of-type button {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: .8em;
+  background-color: #171717;
+  color: white;
+  padding: .9em 1.4em;
+  margin-left: -.3em;
+  border-style: none;
+}
+
+footer article:first-of-type p{
+  text-transform: uppercase;
+  font-size: .9em;
+  text-align: center;
+  margin-top: 3em;
+}
+
+/* styling van de social media kanalen */
+
+footer section article:nth-of-type(2) button{
+  display: inline-flex;
+  justify-content: center;
+ 
+}
+
+footer section article:nth-of-type(2) button:first-child {
+  background-image: url('../images/facebook.png');
+  padding: 1em;
+  border-style: none;
+  background-size: cover;
+  background-color: white;
   
+}
 
-
+footer section article:nth-of-type(2) button:nth-child(2){
+  background-image: url('../images/twitter.png');
+  padding: 1em;
+  border-style: none;
+  background-size: cover;
+  background-color: white;
+  
+}
+footer section article:nth-of-type(2) button:nth-child(3){
+  background-image: url('../images/instagram.png');
+  padding: 1em;
+  border-style: none;
+  background-size: cover;
+  background-color: white;
+  
 }

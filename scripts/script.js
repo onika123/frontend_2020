@@ -1,6 +1,10 @@
 // JavaScript Document
 
-function toggleSidebar(){
-    document.getElementById("sidebar").classList.toggle('active');
-   }
- 
+var deButton = document.querySelector("header nav button");
+
+deButton.addEventListener("click", toggleMenu);
+
+function toggleMenu(event) {
+  deNav = event.target.parentNode;
+  deNav.classList.toggle("toonMenu");
+}
