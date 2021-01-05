@@ -20,7 +20,7 @@ header {
 header img:first-of-type {
   width: 7em;
   height: 2em;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   align-self: center;
 }
 
@@ -34,7 +34,7 @@ nav li {
 
 }
 
-
+/* hamburgermenu */
 header nav button {
   position: relative;
   /* width: 2em; */
@@ -57,19 +57,19 @@ header nav button::before {
 
 }
 
-nav.toonMenu button::before {
+/* nav.toonMenu button::before {
   content: "\2630";
-}
+} */
 
+/* tekst in hamburgermenu */
 header nav ul {
   margin: 0;
   padding: 4em 0 0;
   background: white;
   list-style: none;
-
   position: fixed;
   left: 0;
-  right: 0;
+  right: 7em;
   top: 0;
   bottom: 0;
   transform: translatex(-100%);
@@ -79,10 +79,11 @@ header nav ul {
 
 nav.toonMenu ul {
   transform: translatex(0);
-
+  
 }
-
-
+#toggle:checked  ~ .puppies {
+  margin-top: 135px;
+}
 
 /* main */
 main article {
@@ -185,8 +186,7 @@ footer article:first-of-type p{
   margin-top: 3em;
 }
 
-/* styling van de social media kanalen */
-
+/* styling van de social media kanalen buttons */
 footer section article:nth-of-type(2) button{
   display: inline-flex;
   justify-content: center;
@@ -210,6 +210,7 @@ footer section article:nth-of-type(2) button:nth-child(2){
   background-color: white;
   
 }
+
 footer section article:nth-of-type(2) button:nth-child(3){
   background-image: url('../images/instagram.png');
   padding: 1em;
@@ -218,3 +219,12 @@ footer section article:nth-of-type(2) button:nth-child(3){
   background-color: white;
   
 }
+
+
+
+footer section article:nth-of-type(2) button {
+  display: inline-block;
+  align-items: center;
+  
+}
+

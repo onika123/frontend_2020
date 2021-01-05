@@ -111,3 +111,9 @@ Breakdown schets van de homepagina
 
 -productpagina-
 <img src="images/readme/productVB.PNG" width="375px" alt="omschrijving van de pagina">
+
+
+
+Hamburger menu slides:
+https://codemyui.com/pure-css-hamburger-menu-slide-in/
+https://csspoint101.com/40-best-css-sliding-menus/
