@@ -15,33 +15,17 @@ body {
 header {
   display: flex;
   margin-bottom: 20px;
-  justify-content: space-around;
-  align-items: center;
-  
 }
-
 
 header img:first-of-type {
-  max-width: 7em;
+  width: 7em;
   height: 2em;
-  
-  margin: 0 auto;
-
-
-}
-
-header img:nth-of-type(2) {
-  width: 1.2em;
- 
-}
-
-header img:nth-of-type(3) {
-  width: 1.2em;
-
+  /* flex-grow: 1; */
+  align-self: center;
 }
 
 nav {
-  align-self: flex-start;
+  display: flex;
 }
 
 nav li {
@@ -50,7 +34,7 @@ nav li {
 
 }
 
-/* hamburgermenu button*/
+/* hamburgermenu */
 header nav button {
   position: relative;
   font-size: 2em;
@@ -58,8 +42,6 @@ header nav button {
   cursor: pointer;
   background-color: white;
   z-index: 100;
-  appearance: none;
- 
 
 }
 
@@ -71,20 +53,12 @@ header nav button::before {
 
 }
 
-header nav.toonMenu button::before {
- content:none
-}
-
 /* tekst in hamburgermenu */
-
 header nav ul {
-  display: flex;
-  flex-direction: column;
   margin: 0;
-  padding: 5em 0 0;
+  padding: 4em 0 0;
   background: white;
   list-style: none;
-  font-size: .8em;
   position: fixed;
   left: 0;
   right: 7em;
@@ -93,45 +67,12 @@ header nav ul {
   transform: translatex(-100%);
   transition: .3s;
   z-index: 50;
-  
-}
-
-header nav ul li:nth-of-type(1n+6) {
-  color:lightgrey;
-  border: none;
-  
-}
-
-header nav ul li {
-  border-bottom: .1px solid gray;
-  text-transform: uppercase;
-  padding: 1em ;
-
 }
 
 
-nav.toonMenu ul {
+nav.toonMenu ul{
   transform: translatex(0);
-  
 }
-
-header nav ul div{
-  display: flex;
-  align-items: center;
-  /* border: 2px solid red; */
-  
-}
-
-header nav ul div img {
- 
-}
-
-/* nav.toonMenu main {
-  transform: translatex(400px);
-} */
-
-
-
 
 
 /* main */
@@ -176,6 +117,7 @@ footer {
 
 footer section {
   padding: 10px;
+  border: 1px solid black;
 
 }
 
@@ -199,14 +141,12 @@ footer section ul li {
   list-style-type: none;
   text-transform: uppercase;
   line-height: 2em;
-  font-size: .8em;
-
+ 
 }
 
 footer h3 {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: .9em;
 }
 
 /* styling van de input */
@@ -216,7 +156,6 @@ footer input {
   width: 70%;
   font-size: 1em;
   padding: .5em 1em;
-
 }
 
 footer article:first-of-type button {
@@ -228,58 +167,54 @@ footer article:first-of-type button {
   padding: .9em 1.4em;
   margin-left: -.3em;
   border-style: none;
-
 }
 
-footer article:first-of-type p {
+footer article:first-of-type p{
   text-transform: uppercase;
-  font-size: .7em;
+  font-size: .9em;
   text-align: center;
   margin-top: 3em;
-
 }
-
 
 /* styling van de social media kanalen buttons */
-footer section article:nth-of-type(2) {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
-  align-content: space-between; 
-  
-}
-
-footer section article:nth-of-type(3) h3:first-of-type {
-  margin-bottom: -1em;
-
+footer section article:nth-of-type(2) button{
+  display: inline-flex;
+  justify-content: center;
+ 
 }
 
 footer section article:nth-of-type(2) button:first-child {
   background-image: url('../images/facebook.png');
   padding: 1em;
-  margin: 1.5em;
   border-style: none;
   background-size: cover;
   background-color: white;
-
+  
 }
 
-footer section article:nth-of-type(2) button:nth-child(2) {
+footer section article:nth-of-type(2) button:nth-child(2){
   background-image: url('../images/twitter.png');
   padding: 1em;
-  margin: 1.5em;
   border-style: none;
   background-size: cover;
   background-color: white;
-
+  
 }
 
-footer section article:nth-of-type(2) button:nth-child(3) {
+footer section article:nth-of-type(2) button:nth-child(3){
   background-image: url('../images/instagram.png');
   padding: 1em;
-  margin: 1.5em;
   border-style: none;
   background-size: cover;
   background-color: white;
-
+  
 }
+
+
+
+footer section article:nth-of-type(2) button {
+  display: inline-block;
+  align-items: center;
+  
+}
+

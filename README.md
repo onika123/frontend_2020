@@ -6,25 +6,52 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. Veel MDN
+2. Stack overflow
+3. css-tricks (flexbox)
+4. Opdrachten uit de les
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Ik heb mijn eindproduct helaas niet afgekregen. Wat ik goed vond gaan is dat ik merk dat ik er steeds handiger in word. Het lukt mij nu sneller en makkelijker hoe ik iets specifieker moet opzoeken als ik er niet uitkom.
+En ik merk dat ik er veel plezier in heb tijdens het maken (vooral als het werkt) 
+
+Wat minder goed ging was mijn planning met mijn huidige vakken, vandaar dat het mij niet is gelukt om het af te krijgen. 
+
+Wat ik nog moet toevoegen/volledig maken:
+Home pagina
+- het hamburger menu
+    - de pagina moet opzij schuiven
+    - logo, wishlist, account moet juist staan
+    - change country en €EUR
+- Betaalmethodes toevoegen in de footer
+
+Productpagina
+- tekst en titels juist stylen
+- slideshow toevoegen bij 'you may also like'
+
+- Alt teksten toevoegen
+- Toeters en bellen toevoegen
+    - Popups 
+    - selected state
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+<img src="images/voortgang/homepageoverview.png">
 
+<img src="images/voortgang/hamburgermenu.png">
 
+<img src="images/voortgang/footer.png">
+
+<img src="images/voortgang/productpagina.png">
+
+<img src="images/voortgang/productpagina2.png">
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+Wegens persoonlijke omstandigheden was ik hierbij niet aanwezig.
 
 
 
