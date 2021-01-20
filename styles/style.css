@@ -17,14 +17,14 @@ header {
   margin-bottom: 20px;
   justify-content: space-around;
   align-items: center;
-  
+
 }
 
 
 header img:first-of-type {
   max-width: 7em;
   height: 2em;
-  
+
   margin: 0 auto;
 
 
@@ -32,7 +32,7 @@ header img:first-of-type {
 
 header img:nth-of-type(2) {
   width: 1.2em;
- 
+
 }
 
 header img:nth-of-type(3) {
@@ -59,7 +59,7 @@ header nav button {
   background-color: white;
   z-index: 100;
   appearance: none;
- 
+
 
 }
 
@@ -71,8 +71,13 @@ header nav button::before {
 
 }
 
+
 header nav.toonMenu button::before {
- content:none
+  content: none;
+  /* transform: scale(.75);
+  width: 2.5em;
+  display: inline-block;
+  z-index: 4; */
 }
 
 /* tekst in hamburgermenu */
@@ -85,49 +90,49 @@ header nav ul {
   background: white;
   list-style: none;
   font-size: .8em;
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 7em;
   top: 0;
   bottom: 0;
   transform: translatex(-100%);
   transition: .3s;
-  z-index: 50;
-  
+  z-index: 3;
 }
 
-header nav ul li:nth-of-type(1n+6) {
-  color:lightgrey;
+
+
+header nav ul li:nth-of-type(1n+9) {
+  color: lightgrey;
   border: none;
-  
+
 }
 
 header nav ul li {
   border-bottom: .1px solid gray;
   text-transform: uppercase;
-  padding: 1em ;
+  padding: 1em;
 
 }
 
+/* header nav ul li:nth-child(-n+3) {
+  border: 1px solid red;
+  align-items: center;
 
+} */
+
+header nav ul li:nth-child(1){
+  margin-top: -50px;
+}
 nav.toonMenu ul {
   transform: translatex(0);
-  
+
 }
 
-header nav ul div{
-  display: flex;
-  align-items: center;
-  /* border: 2px solid red; */
-  
-}
 
-header nav ul div img {
- 
-}
 
 /* nav.toonMenu main {
-  transform: translatex(400px);
+  transform: translatex(-30%);
 } */
 
 
@@ -140,7 +145,6 @@ main article {
   display: flex;
   justify-content: center;
   align-items: center;
-
   padding-bottom: 10px;
 }
 
@@ -216,6 +220,7 @@ footer input {
   width: 70%;
   font-size: 1em;
   padding: .5em 1em;
+  letter-spacing: 2px;
 
 }
 
@@ -244,9 +249,9 @@ footer article:first-of-type p {
 footer section article:nth-of-type(2) {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
-  align-content: space-between; 
-  
+  justify-content: center;
+  align-content: space-between;
+
 }
 
 footer section article:nth-of-type(3) h3:first-of-type {

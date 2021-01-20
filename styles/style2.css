@@ -15,17 +15,37 @@ body {
 header {
   display: flex;
   margin-bottom: 20px;
+  justify-content: space-around;
+  align-items: center;
+
 }
 
+
 header img:first-of-type {
-  width: 7em;
+  max-width: 7em;
   height: 2em;
-  /* flex-grow: 1; */
-  align-self: center;
+  margin: 0 auto;
+
+}
+
+header button:first-of-type {
+  background-image: url('../images/search.png');
+  width: 1.5em;
+  height: 1.5em;
+  background-color: white;
+  background-size: cover;
+
+}
+
+header button:nth-of-type(2)::before{
+  background-image: url('images/shopping-cart (1).png');
+  /* width: 1.2em; */
+
 }
 
 nav {
-  display: flex;
+  align-self: flex-start;
+
 }
 
 nav li {
@@ -34,7 +54,7 @@ nav li {
 
 }
 
-/* hamburgermenu */
+/* hamburgermenu button*/
 header nav button {
   position: relative;
   font-size: 2em;
@@ -42,6 +62,7 @@ header nav button {
   cursor: pointer;
   background-color: white;
   z-index: 100;
+  appearance: none;
 
 }
 
@@ -53,39 +74,79 @@ header nav button::before {
 
 }
 
+
+/* header nav.toonMenu button::before {
+  content: none;
+  transform: scale(.75);
+  width: 2.5em;
+  display: inline-block;
+  z-index: 4; 
+} */
+
 /* tekst in hamburgermenu */
 header nav ul {
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  padding: 4em 0 0;
+  padding: 5em 0 0;
   background: white;
   list-style: none;
-  position: fixed;
+  font-size: .8em;
+  position: absolute;
   left: 0;
   right: 7em;
   top: 0;
   bottom: 0;
   transform: translatex(-100%);
   transition: .3s;
-  z-index: 50;
+  z-index: 3;
+}
+
+header nav ul div {
+  display: flex;
+  margin-top: -55px;
+  border: 1px solid red;
+  justify-content: space-between;
+
+}
+
+header nav ul div p {
+  text-transform: uppercase;
+
+
 }
 
 
-nav.toonMenu ul{
+
+header nav ul li:nth-of-type(1n+9) {
+  color: lightgrey;
+  border: none;
+}
+
+header nav ul li {
+  border-bottom: .1px solid gray;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+header nav ul li:nth-child(1) {
+  margin-top: -50px;
+}
+
+nav.toonMenu ul {
   transform: translatex(0);
 }
 
 
+/* nav.toonMenu main {
+  transform: translatex(-30%);
+} */
+
+
+
+
 /* main */
-main article {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding-bottom: 10px;
-}
-
-main article img {
+main section img {
   min-width: 350px;
   max-width: 360px;
   min-height: auto;
@@ -93,31 +154,156 @@ main article img {
 
 }
 
-main article button {
-  border: solid 1px black;
-  padding: 5px 15px;
-  font-family: 'Open Sans Condensed', sans-serif;
-  background: transparent;
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.9em;
+  font-stretch: condensed;
 
-  position: absolute;
-  z-index: 1;
-  top: 15px;
+}
 
+main section p:first-of-type {
+  text-align: center;
+  color: #3A3B3C;
+  letter-spacing: 3px;
+  font-size: 1.2em;
+
+}
+
+main section:first-of-type button {
+  border: none;
+  background: none;
+  margin: 20px 110px 50px 110px;
+  font-family: 'poppins', sans-serif;
+
+}
+
+
+
+
+main section:first-of-type button::before {
+  content: "\2661";
+  padding: 15px;
+
+}
+
+/* main section:first-of-type p:nth-of-type(2) { */
+  /* display: inline-block;
+  color: red;
+  margin-bottom: 50px; 
+
+}*/
+
+
+main section p:nth-child(n+5) {
+  text-align: center;
+  color: grey;
+  font-size: 1em;
+  margin-top: -15px;
+
+}
+
+main section ul {
+  margin-top: 30px;
+
+}
+
+main section ul li {
+  text-transform: uppercase;
+  line-height: 170%;
+  font-size: .8em;
 
 
 }
 
+
+
+/* you may also like carousel */
+
+
+
+
+
+
+main section:nth-of-type(3) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+}
+
+main section:nth-of-type(3) h2 {
+  margin: 20px;
+  width: 300px;
+  }
+
+main section:nth-of-type(3) ul {
+  display: inline-flex;
+  z-index: 0;
+  height: 350px;
+  margin: 150px;
+  margin-left: -50px;
+
+}
+
+main section:nth-of-type(3) ul li {
+    display: block;
+    padding: 100px;
+    z-index: 0;
+    width: 450px;
+    max-height: 100px;
+    margin: 50px;
+    margin-top: -250px;
+
+}
+
+/*buttons style*/
+#backbutton {
+  content:"\1433";
+  width: 3em;
+  height: 3em;
+  float: left;
+  transform: scale(.75);
+  border: 0.1em solid red;
+  margin-top: -1050px;
+  z-index: 5;
+
+}
+
+#backbutton:hover {
+  cursor: pointer;
+}
+
+#nextbutton {
+  content: "\1433";
+  width: 3em;
+  height: 3em;
+  float: right;
+  transform: scale(.75);
+  border: 0.1em solid red;
+  margin-top: -1050px; 
+  z-index: 5;
+
+}
+
+#nextbutton:hover {
+
+  cursor: pointer;
+}
 
 
 /* footer styling */
 footer {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -200px;
+  border-top: .5px solid grey;
 }
 
 footer section {
   padding: 10px;
-  border: 1px solid black;
 
 }
 
@@ -141,12 +327,14 @@ footer section ul li {
   list-style-type: none;
   text-transform: uppercase;
   line-height: 2em;
- 
+  font-size: .8em;
+
 }
 
 footer h3 {
   text-transform: uppercase;
   font-weight: bold;
+  font-size: .9em;
 }
 
 /* styling van de input */
@@ -156,6 +344,8 @@ footer input {
   width: 70%;
   font-size: 1em;
   padding: .5em 1em;
+  letter-spacing: 1px;
+
 }
 
 footer article:first-of-type button {
@@ -167,54 +357,58 @@ footer article:first-of-type button {
   padding: .9em 1.4em;
   margin-left: -.3em;
   border-style: none;
+
 }
 
-footer article:first-of-type p{
+footer article:first-of-type p {
   text-transform: uppercase;
-  font-size: .9em;
+  font-size: .7em;
   text-align: center;
   margin-top: 3em;
+
 }
 
+
 /* styling van de social media kanalen buttons */
-footer section article:nth-of-type(2) button{
-  display: inline-flex;
+footer section article:nth-of-type(2) {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
- 
+  align-content: space-between;
+
+}
+
+footer section article:nth-of-type(3) h3:first-of-type {
+  margin-bottom: -1em;
+
 }
 
 footer section article:nth-of-type(2) button:first-child {
   background-image: url('../images/facebook.png');
   padding: 1em;
+  margin: 1.5em;
   border-style: none;
   background-size: cover;
   background-color: white;
-  
+
 }
 
-footer section article:nth-of-type(2) button:nth-child(2){
+footer section article:nth-of-type(2) button:nth-child(2) {
   background-image: url('../images/twitter.png');
   padding: 1em;
+  margin: 1.5em;
   border-style: none;
   background-size: cover;
   background-color: white;
-  
+
 }
 
-footer section article:nth-of-type(2) button:nth-child(3){
+footer section article:nth-of-type(2) button:nth-child(3) {
   background-image: url('../images/instagram.png');
   padding: 1em;
+  margin: 1.5em;
   border-style: none;
   background-size: cover;
   background-color: white;
-  
+
 }
-
-
-
-footer section article:nth-of-type(2) button {
-  display: inline-block;
-  align-items: center;
-  
-}
-
