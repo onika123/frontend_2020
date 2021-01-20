@@ -28,20 +28,6 @@ header img:first-of-type {
 
 }
 
-header button:first-of-type {
-  background-image: url('../images/search.png');
-  width: 1.5em;
-  height: 1.5em;
-  background-color: white;
-  background-size: cover;
-
-}
-
-header button:nth-of-type(2)::before{
-  background-image: url('images/shopping-cart (1).png');
-  /* width: 1.2em; */
-
-}
 
 nav {
   align-self: flex-start;
@@ -113,12 +99,9 @@ header nav ul div {
 header nav ul div p {
   text-transform: uppercase;
 
-
 }
 
-
-
-header nav ul li:nth-of-type(1n+9) {
+header nav ul li:nth-of-type(1n+6) {
   color: lightgrey;
   border: none;
 }
@@ -142,6 +125,25 @@ nav.toonMenu ul {
   transform: translatex(-30%);
 } */
 
+
+header:nth-child(3) {
+  background-image: url('../images/search.png');
+  width: 1.5em;
+  height: 1.5em;
+  background-color: white;
+  background-size: cover;
+
+}
+
+header button:nth-of-type(2) {
+  background-image: url('../images/shopping-cart\ \(1\).png');
+  width: 2em;
+  height: 2em;
+  background-color: white;
+  background-size: cover;
+  border: none;
+
+}
 
 
 
@@ -188,7 +190,7 @@ main section:first-of-type button::before {
 }
 
 /* main section:first-of-type p:nth-of-type(2) { */
-  /* display: inline-block;
+/* display: inline-block;
   color: red;
   margin-bottom: 50px; 
 
@@ -237,7 +239,7 @@ main section:nth-of-type(3) {
 main section:nth-of-type(3) h2 {
   margin: 20px;
   width: 300px;
-  }
+}
 
 main section:nth-of-type(3) ul {
   display: inline-flex;
@@ -249,19 +251,38 @@ main section:nth-of-type(3) ul {
 }
 
 main section:nth-of-type(3) ul li {
-    display: block;
-    padding: 100px;
-    z-index: 0;
-    width: 450px;
-    max-height: 100px;
-    margin: 50px;
-    margin-top: -250px;
+  display: block;
+  padding: 100px;
+  z-index: 0;
+  width: 450px;
+  max-height: 100px;
+  margin: 50px;
+  margin-top: -250px;
 
 }
 
 /*buttons style*/
-#backbutton {
-  content:"\1433";
+
+main section:nth-of-type(3) button:first-of-type {
+  /* background-image: "\1433"; */
+  content: "back";
+  width: 3em;
+  height: 3em;
+  float: right;
+  /* background-color: white; */
+  background-size: cover;
+  transform: scale(.75);
+  margin-top: -1050px;
+  z-index: 5;
+
+}
+
+main section:nth-of-type(3) button:first-of-type {
+  cursor: pointer;
+}
+
+main section:nth-of-type(3) button:nth-of-type(2) {
+  content: "\1433";
   width: 3em;
   height: 3em;
   float: left;
@@ -272,26 +293,11 @@ main section:nth-of-type(3) ul li {
 
 }
 
-#backbutton:hover {
+main section:nth-of-type(3) button:nth-of-type(2) {
   cursor: pointer;
 }
 
-#nextbutton {
-  content: "\1433";
-  width: 3em;
-  height: 3em;
-  float: right;
-  transform: scale(.75);
-  border: 0.1em solid red;
-  margin-top: -1050px; 
-  z-index: 5;
 
-}
-
-#nextbutton:hover {
-
-  cursor: pointer;
-}
 
 
 /* footer styling */

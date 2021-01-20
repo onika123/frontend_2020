@@ -1,5 +1,5 @@
 // JavaScript Document
-var count = 0;
+var count = 1200;
 
 
 var deButton = document.querySelector("header nav button");
@@ -23,13 +23,13 @@ nextbutton.addEventListener('click', next)
 
 //functies voor de buttons aanmaken
 function next() {
-    count -= 332;
+    count -= 450;
     alsoLikeCarousel.style.transform = `translateX(${count}px)`;
     console.log('next')
 }
 
 function back() {
-    count += 332;
+    count += 450;
     alsoLikeCarousel.style.transform = `translateX(${count}px)`;
     console.log('back')
 }

@@ -26,16 +26,16 @@ Home pagina
     - de pagina moet opzij schuiven
     - logo, wishlist, account moet juist staan
     - change country en €EUR
-- Betaalmethodes toevoegen in de footer
+
+
 
 Productpagina
 - tekst en titels juist stylen
 - slideshow toevoegen bij 'you may also like'
-
 - Alt teksten toevoegen
-- Toeters en bellen toevoegen
-    - Popups 
-    - selected state
+
+
+
 
 **Screenshot(s):**
 
