@@ -29,15 +29,6 @@ header img:first-of-type {
 
 }
 
-header img:nth-of-type(2) {
-  width: 1.2em;
-
-}
-
-header img:nth-of-type(3) {
-  width: 1.2em;
-
-}
 
 nav {
   align-self: flex-start;
@@ -102,7 +93,6 @@ header nav ul {
 header nav ul div {
   display: flex;
   margin-top: -55px;
-  border: 1px solid red;
   justify-content: space-between;
 
 }
@@ -129,21 +119,27 @@ header nav ul li {
 
 header nav ul li:nth-child(1){
   margin-top: -50px;
+
 }
+
 nav.toonMenu ul {
   transform: translatex(0);
 
 }
 
+nav.toonMenu::before main {
+  transition: margin-right 2s;
+}
+
 /* search button */
-header button:nth-of-type(1){
+/* header button:nth-of-type(1), dit pakt zowel de 1e button als 2e button */
+#search {
   background-image: url('../images/search.png');
   width: 1.5em;
   height: 1.5em;
   background-color: white;
   background-size: cover;
-  border:none;
-
+  border: none
 }
 
 /* shoppingcart button */
@@ -157,14 +153,6 @@ header button:nth-of-type(2) {
   margin-left: 10px;
 
 }
-
-
-/* nav.toonMenu main {
-  transform: translatex(-30%);
-} */
-
-
-
 
 
 /* main */
@@ -189,11 +177,9 @@ main article button {
   padding: 5px 15px;
   font-family: 'Open Sans Condensed', sans-serif;
   background: transparent;
-
   position: absolute;
   z-index: 1;
   top: 15px;
-
 
 
 }
